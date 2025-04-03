@@ -40,6 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.buscar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label6
@@ -102,7 +103,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(251, 173);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(227, 20);
+            this.textBox1.Size = new System.Drawing.Size(93, 20);
             this.textBox1.TabIndex = 17;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -152,11 +153,22 @@
             this.label1.Size = new System.Drawing.Size(0, 73);
             this.label1.TabIndex = 12;
             // 
+            // buscar
+            // 
+            this.buscar.Location = new System.Drawing.Point(350, 169);
+            this.buscar.Name = "buscar";
+            this.buscar.Size = new System.Drawing.Size(75, 24);
+            this.buscar.TabIndex = 24;
+            this.buscar.Text = "buscar";
+            this.buscar.UseVisualStyleBackColor = true;
+            this.buscar.Click += new System.EventHandler(this.buscar_Click);
+            // 
             // Atualizar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buscar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -190,5 +202,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buscar;
     }
 }
